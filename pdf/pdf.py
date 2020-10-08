@@ -28,7 +28,7 @@ class pdfXBlock(XBlock):
         help="The URL for your PDF.")
     
     allow_download = Boolean(display_name="PDF Download Allowed",
-        default=True,
+        default=False,
         scope=Scope.content,
         help="Display a download button for this PDF.")
     
