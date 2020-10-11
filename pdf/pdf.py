@@ -23,7 +23,7 @@ class pdfXBlock(XBlock):
         help="This name appears in the horizontal navigation at the top of the page.")
 
     url = String(display_name="PDF URL",
-        default="/home/bitnami/viewerjs/viewerjs-0.5.8/ViewerJS/#http://tutorial.math.lamar.edu/pdf/Trig_Cheat_Sheet.pdf",
+        default="http://tutorial.math.lamar.edu/pdf/Trig_Cheat_Sheet.pdf",
         scope=Scope.content,
         help="The URL for your PDF.")
     
