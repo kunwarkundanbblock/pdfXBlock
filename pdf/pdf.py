@@ -41,7 +41,7 @@ class pdfXBlock(XBlock):
         default="",
         scope=Scope.content,
         help="Add a download link for the source file of your PDF. Use it for example to provide the PowerPoint file used to create this PDF.")
-    print(self.url)
+    
 
     '''
     Util functions
@@ -82,6 +82,7 @@ class pdfXBlock(XBlock):
         frag.add_css(self.load_resource("static/css/pdf.css"))
         frag.add_javascript(self.load_resource("static/js/pdf_view.js"))
         frag.initialize_js('pdfXBlockInitView')
+        print(self.url)
         return frag
 
     def studio_view(self, context=None):
