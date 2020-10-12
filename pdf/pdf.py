@@ -70,7 +70,7 @@ class pdfXBlock(XBlock):
         
         context = {
             'display_name': self.display_name,
-            'url': self.url,
+            'url': self.url+"#toolbar=0",
             'allow_download': self.allow_download,
             'source_text': self.source_text,
             'source_url': self.source_url
