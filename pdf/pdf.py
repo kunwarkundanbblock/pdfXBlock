@@ -28,7 +28,7 @@ class pdfXBlock(XBlock):
         help="The URL for your PDF.")
     
     allow_download = Boolean(display_name="PDF Download Allowed",
-        default=False,
+        default=True,
         scope=Scope.content,
         help="Display a download button for this PDF.")
     
@@ -41,7 +41,6 @@ class pdfXBlock(XBlock):
         default="",
         scope=Scope.content,
         help="Add a download link for the source file of your PDF. Use it for example to provide the PowerPoint file used to create this PDF.")
-    
 
     '''
     Util functions
