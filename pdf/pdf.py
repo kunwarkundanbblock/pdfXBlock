@@ -41,6 +41,7 @@ class pdfXBlock(XBlock):
         default="",
         scope=Scope.content,
         help="Add a download link for the source file of your PDF. Use it for example to provide the PowerPoint file used to create this PDF.")
+    print(self.url)
 
     '''
     Util functions
@@ -70,7 +71,7 @@ class pdfXBlock(XBlock):
         
         context = {
             'display_name': self.display_name,
-            'url': self.url+"#toolbar=0",
+            'url': self.url,
             'allow_download': self.allow_download,
             'source_text': self.source_text,
             'source_url': self.source_url
